@@ -1,15 +1,15 @@
 import React from "react";
 import { Row, Col } from "antd";
-import { Sidebar } from "./components/Sidebar";
-import { ChatWindow } from "./components/ChatWindow";
+import { Sidebar } from "./components/SideBar/Sidebar";
+import { ChatWindow } from "./components/ChatWindow/ChatWindow";
 
 export const ChatRoom = () => {
   return (
     <Row>
-      <Col span={4}>
+      <Col flex="200px">
         <Sidebar />
       </Col>
-      <Col span={20}>
+      <Col flex="auto">
         <ChatWindow />
       </Col>
     </Row>
